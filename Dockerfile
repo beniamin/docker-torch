@@ -17,7 +17,9 @@ RUN apt-get update && \
         pkg-config \
         protobuf-compiler \
         unzip \
-        wget
+        wget && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Fetch Intel MKL.
 RUN mkdir /root/mkl && \
