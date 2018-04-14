@@ -14,7 +14,6 @@ RUN apt-get update && \
         libprotobuf9v5 \
         libreadline-dev \
         libtool \
-        libzmq-dev \
         pkg-config \
         protobuf-compiler \
         unzip \
